@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2003F88-F68E-412B-B69F-15BC3E0F2C3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ASGJETSAT.PL</RootNamespace>
+    <AssemblyName>ASGJETSAT.PL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayarlar.Designer.cs">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JETSAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JETSAT.Designer.cs">
+      <DependentUpon>JETSAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JETSATVIEW.cs" />
+    <Compile Include="Muhasebe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Muhasebe.Designer.cs">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sayfalar.cs" />
+    <Compile Include="Sepettekiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepettekiler.Designer.cs">
+      <DependentUpon>Sepettekiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerKisaYol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunlerKisaYol.Designer.cs">
+      <DependentUpon>UrunlerKisaYol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunlerStok.Designer.cs">
+      <DependentUpon>UrunlerStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunlerKategori.Designer.cs">
+      <DependentUpon>UrunlerKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunlerUrun.Designer.cs">
+      <DependentUpon>UrunlerUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerOzellik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunlerOzellik.Designer.cs">
+      <DependentUpon>UrunlerOzellik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunOzellikMDICmbx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunOzellikMDICmbx.Designer.cs">
+      <DependentUpon>UrunOzellikMDICmbx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunOzellikMDITxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunOzellikMDITxt.Designer.cs">
+      <DependentUpon>UrunOzellikMDITxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yuklenme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yuklenme.Designer.cs">
+      <DependentUpon>Yuklenme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayarlar.resx">
+      <DependentUpon>Ayarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JETSAT.resx">
+      <DependentUpon>JETSAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Muhasebe.resx">
+      <DependentUpon>Muhasebe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sepettekiler.resx">
+      <DependentUpon>Sepettekiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerKisaYol.resx">
+      <DependentUpon>UrunlerKisaYol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerStok.resx">
+      <DependentUpon>UrunlerStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerKategori.resx">
+      <DependentUpon>UrunlerKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerUrun.resx">
+      <DependentUpon>UrunlerUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerOzellik.resx">
+      <DependentUpon>UrunlerOzellik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunOzellikMDICmbx.resx">
+      <DependentUpon>UrunOzellikMDICmbx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunOzellikMDITxt.resx">
+      <DependentUpon>UrunOzellikMDITxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yuklenme.resx">
+      <DependentUpon>Yuklenme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASGJETSAT.BL\ASGJETSAT.BL.csproj">
+      <Project>{fb4e66d9-b7f8-47cb-91cd-d02a97d414a2}</Project>
+      <Name>ASGJETSAT.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ASGJETSAT.Entities\ASGJETSAT.Entities.csproj">
+      <Project>{77482c2d-12aa-450f-8b52-39b048a0befb}</Project>
+      <Name>ASGJETSAT.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArkaPlan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Sepett.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
